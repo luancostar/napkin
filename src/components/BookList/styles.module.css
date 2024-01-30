@@ -1,0 +1,23 @@
+
+.horizontalRow{
+    display: flex;
+    gap: 3rem;
+    overflow: auto;
+    list-style-type: none;
+    padding: 0;
+}
+.horizontalRow::-webkit-scrollbar-thumb {
+    background: rgba(90, 90, 90);
+}
+.bookTitle {
+    font-size: 14px;
+    font-weight: bold;
+}
+.bookCover{
+    width: 200px;
+    border-radius: 10px;
+}
+.infoBook {
+    display: flex;
+    justify-content: space-between;
+}
