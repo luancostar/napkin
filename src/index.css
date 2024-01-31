@@ -11,10 +11,8 @@
   font-style: normal;
   scrollbar-color: rgba(0, 0, 0, 0.5) transparent; /* Cor da barra de rolagem e cor de fundo transparente */
   scrollbar-width: thin; /* Largura da barra de rolagem (pode ser thin, auto ou none) */
-
+ 
 }
-.title--big{
-  font-size: 55px;
-  font-weight: bold;
-  padding: 0rem 1rem;
+body {
+  margin: 0px;
 }

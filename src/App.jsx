@@ -1,21 +1,22 @@
 import React from "react"
-import BookList from "./components/BookList"
 import SecondRow from "./components/SecondRow"
 import BottomBar from "./components/BottomBar"
+import FirstRow from "./components/FirstRow"
+import Header from "./components/Header"
 
 export default function App () {
   return (
     <>
     <div>
-      <h1 className="title--big">
-        Através <br></br>
-        dos Séculos.</h1>
-    </div>
-    <div>
-
-        <BookList  />
+      <div>
+        <Header headerTitle={'Napkin'} />
+      </div>
+       <div style={{marginTop:'160px'}}> 
         <SecondRow />
+        <FirstRow  />
+        <ThirdtRow  />
         <BottomBar />
+        </div>
     </div>
     </>
   )
