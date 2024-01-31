@@ -15,4 +15,7 @@
     width: 100%;
     top: 0;
   }
-  
+  .fadeEffect {
+    transition: color 0.5s ease; /* Adiciona uma transição suave de 0.5 segundos para a propriedade de cor */
+    background-color: black;
+  }

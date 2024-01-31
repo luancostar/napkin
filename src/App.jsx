@@ -3,6 +3,7 @@ import SecondRow from "./components/SecondRow"
 import BottomBar from "./components/BottomBar"
 import FirstRow from "./components/FirstRow"
 import Header from "./components/Header"
+import ThirdRow from "./components/ThirdRow"
 
 export default function App () {
   return (
@@ -14,7 +15,7 @@ export default function App () {
        <div style={{marginTop:'160px'}}> 
         <SecondRow />
         <FirstRow  />
-        <ThirdtRow  />
+        <ThirdRow />
         <BottomBar />
         </div>
     </div>
