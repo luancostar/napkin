@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import styles from './styles.module.css'
 import React from 'react'
 

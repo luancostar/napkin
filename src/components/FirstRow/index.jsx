@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // src/components/BookList.jsx
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
