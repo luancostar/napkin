@@ -15,7 +15,8 @@ export default function Header ({headerTitle, headerText, authorText, logoImg}) 
         <div className={`${styles.backgroundHeader} ${isHidden && styles.hidden}`}>
         <h1 
         style={{display: 'flex',
-        alignItems: 'center'}} className={styles.titleBig}>
+        alignItems: 'center',
+        justifyContent: 'center'}} className={styles.titleBig}>
             {headerTitle}
             <img style={{width: '50px',
                 opacity:'0.7'}}   src={logoImg} />
