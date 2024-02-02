@@ -1,11 +1,11 @@
 /* eslint-disable no-unused-vars */
 import React from "react"
-import SecondRow from "../components/SecondRow"
-import BottomBar from "../components/BottomBar"
-import FirstRow from "../components/FirstRow"
-import Header from "../components/Header"
-import ThirdRow from "../components/ThirdRow"
-import logoImage from '../assets/logo/logo.png'
+import SecondRow from "../SecondRow"
+import BottomBar from "../BottomBar"
+import FirstRow from "../FirstRow"
+import Header from "../Header"
+import ThirdRow from "../ThirdRow"
+import logoImage from '../../assets/logo/logo.png'
  
 export default function Home () {
   return (
