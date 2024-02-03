@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 
+
 export default function Header ({headerTitle, headerText, authorText, logoImg}) {
     const [isHidden, setIsHidden] = useState(false);
     const handleToggleHeader = () => {
