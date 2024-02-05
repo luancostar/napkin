@@ -1,5 +1,7 @@
+/* eslint-disable no-unused-vars */
 import styles from './styles.module.css'
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faBookmark, faSearch, faFire } from '@fortawesome/free-solid-svg-icons'
  
@@ -8,8 +10,8 @@ export default function BottomBar ( ) {
     return (
         <div className={styles.containerBottom}>
         <div className={styles.itemsContainerBottom}>
-        <a href=""><FontAwesomeIcon className={styles.bottomIcon} icon={faHome} /></a>
-        <a href=""><FontAwesomeIcon className={styles.bottomIcon} icon={faSearch} /></a>
+        <Link to="/"><FontAwesomeIcon className={styles.bottomIcon} icon={faHome} /></Link>
+        <Link to="/search"><FontAwesomeIcon className={styles.bottomIcon} icon={faSearch} /></Link>
         <a href=""><FontAwesomeIcon className={styles.bottomIcon} icon={faBookmark} /></a>
         <a href=""><FontAwesomeIcon className={styles.bottomIcon} icon={faFire} /></a>
         </div>
