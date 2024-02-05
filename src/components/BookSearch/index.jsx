@@ -6,28 +6,58 @@ import axios from 'axios';
 import styles from './styles.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faStar } from '@fortawesome/free-solid-svg-icons';
+ 
 
 const truncateText = (text, maxLength) => {
-  return text && text.length <= maxLength ? text : text.slice(0, maxLength) + '...';
+  if (typeof text !== 'string') {
+    return '';
+  }
+  return text.length <= maxLength ? text : text.slice(0, maxLength) + '...';
 };
 
 const BookSearch = () => {
   const [query, setQuery] = useState('');
   const [books, setBooks] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   const searchBooks = async () => {
     try {
+      setLoading(true); // Inicia o estado de carregamento
+
       const response = await axios.get(
         `https://www.googleapis.com/books/v1/volumes?q=${query}`
       );
+
       setBooks(response.data.items || []);
     } catch (error) {
       console.error('Erro ao buscar livros:', error);
+    } finally {
+      setLoading(false); // Conclui o estado de carregamento, independentemente do resultado
     }
   };
 
   return (
     <>
+     {/* Se estiver carregando, exiba o indicador de carregamento */}
+     {loading &&
+      <div style={{
+        backgroundColor:'#fff',
+        width: '100vw',
+        height: '100vh',
+        position: 'absolute',
+        display:'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        zIndex: '9999'}} >
+    
+          <img 
+          style={{width: '300px',
+          height: '200px'}}
+          src="/src/assets/background/loading-book.gif" 
+          alt="" />
+       
+ 
+         </div>}
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <div className={styles.ContainerSearch}>
           <input
@@ -61,7 +91,7 @@ const BookSearch = () => {
                     {book.volumeInfo.authors && book.volumeInfo.authors.join(', ')}
                   </p>
                   <p className={styles.descriptionBook}>
-                    {truncateText(book.volumeInfo.description, 200)}
+                    {truncateText(book.volumeInfo.description, 150)}
                   </p>
                 </div>
               </div>

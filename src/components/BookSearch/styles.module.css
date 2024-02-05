@@ -42,6 +42,7 @@
     margin-top: 0px;
     margin-bottom: 5px;
     font-style: italic;
+    font-size: 12px;
 }
 .bookTitle{
     font-weight: 600;
@@ -51,10 +52,12 @@ ul, li {
     list-style-type: none;
     margin: 0px;
     padding: 5px;
+    margin-bottom: 20px;
 }
 .bookCover {
-    min-width: 160px;
-    height: 250px;
+    width: auto;
+    min-width:150px;
+    height: auto;
     filter: drop-shadow(0px 0px 1px black);
     border-radius: 20px;
     border: none;
