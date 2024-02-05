@@ -40,22 +40,14 @@ const BookSearch = () => {
     <>
      {/* Se estiver carregando, exiba o indicador de carregamento */}
      {loading &&
-      <div style={{
-        backgroundColor:'#fff',
-        width: '100vw',
-        height: '100vh',
-        position: 'absolute',
-        display:'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        zIndex: '9999'}} >
+      <div className={styles.overlay}>
     
           <img 
           style={{width: '300px',
+          marginTop: '-20px',
           height: '200px'}}
           src="/src/assets/background/loading-book.gif" 
           alt="" />
-       
  
          </div>}
       <div style={{ display: 'flex', justifyContent: 'center' }}>

@@ -67,3 +67,18 @@ ul, li {
     font-size: 10px;
     margin-left: 10px;
 }
+/* styles.module.css */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Z-index alto para garantir que sobreponha outros elementos */
+  }
+  
