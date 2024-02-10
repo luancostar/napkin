@@ -1,0 +1,19 @@
+.container{
+   margin-top: 80%;
+}
+.formContainer{
+    
+}
+.inputForm{
+padding: 5px;
+border-radius: 6px;
+}
+.buttonForm{
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 25px;
+    border: none;
+    background-color: #b9b9b9;
+    color: #fff;
+    font-weight: bold;
+}
