@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import SessionTitle from '../Title';
- 
+import InfoBook from '../InfoBook';
 
 const truncateText = (text, maxLength) => {
   return text.length <= maxLength ? text : text.slice(0, maxLength) + '...';
@@ -46,6 +46,8 @@ export default function ThirdRow() {
               src={book.volumeInfo.imageLinks?.thumbnail || ''}
               alt={book.volumeInfo.title}
             />
+          <InfoBook/>
+
             <div className={styles.infoBook}>
               <p className={styles.bookTitle}>
                 {truncateText(book.volumeInfo.title, 30)}
