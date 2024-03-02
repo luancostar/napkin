@@ -6,6 +6,8 @@ import styles from './styles.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import SessionTitle from '../Title';
+import InfoBook from '../InfoBook';
+
 
 export default function SecondRow() {
   const [books, setBooks] = useState([]);
@@ -42,6 +44,8 @@ export default function SecondRow() {
               src={book.volumeInfo.imageLinks?.thumbnail || ''}
               alt={book.volumeInfo.title}
             />
+          <InfoBook/>
+
             <div className={styles.infoBook}>
               <p className={styles.bookTitle}>{book.volumeInfo.title}</p>
               <p className={styles.bookTitle}>
@@ -49,6 +53,7 @@ export default function SecondRow() {
               </p>
             </div>
             <p className={styles.authorName}>{book.volumeInfo.authors}</p>
+         
           </li>
         ))}
       </ul>

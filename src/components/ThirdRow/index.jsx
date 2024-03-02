@@ -5,6 +5,7 @@ import styles from './styles.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import SessionTitle from '../Title';
+ 
 
 const truncateText = (text, maxLength) => {
   return text.length <= maxLength ? text : text.slice(0, maxLength) + '...';
@@ -54,6 +55,7 @@ export default function ThirdRow() {
               </p>
             </div>
             <p className={styles.authorName}>{book.volumeInfo.authors}</p>
+    
           </li>
         ))}
       </ul>

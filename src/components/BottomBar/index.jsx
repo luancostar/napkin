@@ -3,7 +3,7 @@ import styles from './styles.module.css'
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faBookmark, faSearch, faFire } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faSearch, faFire, faHeart } from '@fortawesome/free-solid-svg-icons'
  
 // eslint-disable-next-line react/prop-types
 export default function BottomBar ( ) {
@@ -12,7 +12,7 @@ export default function BottomBar ( ) {
         <div className={styles.itemsContainerBottom}>
         <Link to="/"><FontAwesomeIcon className={styles.bottomIcon} icon={faHome} /></Link>
         <Link to="/search"><FontAwesomeIcon className={styles.bottomIcon} icon={faSearch} /></Link>
-        <a href=""><FontAwesomeIcon className={styles.bottomIcon} icon={faBookmark} /></a>
+        <a href=""><FontAwesomeIcon className={styles.bottomIcon} icon={faHeart} /></a>
         <a href=""><FontAwesomeIcon className={styles.bottomIcon} icon={faFire} /></a>
         </div>
         </div>
